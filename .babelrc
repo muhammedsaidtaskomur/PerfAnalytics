@@ -1,0 +1,22 @@
+{
+  "env": {
+    "development": {
+      "presets": ["env"],
+      "plugins": [
+        "add-module-exports",
+        ["transform-runtime", {
+          "regenerator": true
+        }]
+      ]
+    },
+    "production": {
+      "presets": ["env", "minify"],
+      "plugins": [
+        "add-module-exports",
+        ["transform-runtime", {
+          "regenerator": true
+        }]
+      ]
+    }
+  }
+}
